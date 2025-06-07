@@ -1,6 +1,39 @@
 @media print {
-    body { margin: 0; }
-    .no-print { display: none; }
+    body { 
+        margin: 0; 
+        background: white !important;
+        color: black !important;
+    }
+    .no-print, .dark-mode-toggle { display: none !important; }
+    .calendar-container {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #000;
+    }
+    .day-card {
+        background: white !important;
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+    .nutrition-box {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #000 !important;
+    }
+    .food-category, .meal-plan {
+        background: #f0f0f0 !important;
+    }
+    .workout-checkbox {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .collapsible-content {
+        display: block !important;
+    }
+    .toggle-icon {
+        display: none !important;
+    }
 }
 
 body {
@@ -27,6 +60,27 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dark-mode-toggle {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.dark-mode-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 .header h1 {
@@ -102,6 +156,26 @@ body {
     font-size: 0.9em;
     border-left: 4px solid #4ECDC4;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.workout-checkbox {
+    margin-top: 3px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.activity label {
+    cursor: pointer;
+    flex: 1;
+    line-height: 1.4;
+}
+
+.workout-checkbox:checked + label {
+    text-decoration: line-through;
+    opacity: 0.7;
 }
 
 .walk { border-left-color: #95E1D3; }
@@ -206,6 +280,104 @@ body {
 .notes h3 {
     margin-top: 0;
     color: #856404;
+}
+
+/* Collapsible Sections */
+.nutrition-section {
+    margin-top: 20px;
+}
+
+.section-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.section-header:hover {
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+    transform: translateY(-1px);
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.toggle-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.collapsible-content {
+    border-radius: 0 0 12px 12px;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+.dark-mode .calendar-container {
+    background: #2d3748;
+    color: #e0e0e0;
+}
+
+.dark-mode .day-card {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    border-color: #4a5568;
+    color: #e0e0e0;
+}
+
+.dark-mode .activity {
+    background: #1a202c;
+    color: #e0e0e0;
+}
+
+.dark-mode .nutrition-box {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+}
+
+.dark-mode .food-category,
+.dark-mode .meal-plan {
+    background: rgba(255,255,255,0.1);
+}
+
+.dark-mode .legend {
+    background: #4a5568;
+    color: #e0e0e0;
+}
+
+.dark-mode .notes {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e0e0e0;
+}
+
+.dark-mode .notes h3 {
+    color: #fbd38d;
+}
+
+.dark-mode .phase-info {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    color: #e0e0e0;
+}
+
+.dark-mode .section-header {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.dark-mode .section-header:hover {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
 }
 
 @media (max-width: 768px) {
