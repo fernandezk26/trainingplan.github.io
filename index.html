@@ -1,397 +1,369 @@
-<div class="day-card wednesday">
-    <div class="day-header">WEDNESDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity walk">
-            <input type="checkbox" class="workout-checkbox" id="wed-walk">
-            <label for="wed-walk">Walk (30 minutes)</label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Afternoon</div>
-        <div class="activity run">
-            <input type="checkbox" class="workout-checkbox" id="wed-speed">
-            <label for="wed-speed">Speed Work (Intervals/Tempo)<br><em>Nike Run Club progression</em></label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">
-            <input type="checkbox" class="workout-checkbox" id="wed-stretch">
-            <label for="wed-stretch">Easy stretching and rolling</label>
-        </div>
-    </div>
-</div>
-
-<div class="day-card thursday">
-    <div class="day-header">THURSDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity run">
-            <input type="checkbox" class="workout-checkbox" id="thu-run">
-            <label for="thu-run">Recovery Run (30-40 min easy)</label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Noon</div>
-        <div class="activity bike">
-            <input type="checkbox" class="workout-checkbox" id="thu-bike">
-            <label for="thu-bike">Bike (60-120 minutes, Zone 2)<br><em>Start 60min, +10min weekly</em></label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">
-            <input type="checkbox" class="workout-checkbox" id="thu-stretch">
-            <label for="thu-stretch">Easy stretching and rolling</label>
-        </div>
-    </div>
-</div>
-
-<div class="day-card friday">
-    <div class="day-header">FRIDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity walk">
-            <input type="checkbox" class="workout-checkbox" id="fri-walk">
-            <label for="fri-walk">Walk (<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weekly Training Calendar</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Training Calendar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="calendar-container">
-<div class="header">
-<h1>11-Month Triathlon Training Calendar</h1>
-<button id="darkModeToggle" class="dark-mode-toggle">🌙 Dark Mode</button>
-</div>
-
-<div class="phase-info">
-<h3>Phase 1: Foundation & Half Marathon Prep (July-August)</h3>
-<p><strong>Focus:</strong> Fat Loss + Swimming Technique + Half Marathon Training</p>
-</div>
-
-<div class="calendar-grid">
-<div class="day-card monday">
-    <div class="day-header">MONDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity walk">
-            <input type="checkbox" class="workout-checkbox" id="mon-walk">
-            <label for="mon-walk">Walk or Bike (45 mins to 1 hour)</label>
+    <div class="calendar-container">
+        <div class="header">
+            <h1>11-Month Triathlon Training Calendar</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle">🌙 Dark Mode</button>
         </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">12-1 PM</div>
-        <div class="activity swim">
-            <input type="checkbox" class="workout-checkbox" id="mon-swim">
-            <label for="mon-swim">Swim Masters Class<br><em>Target: 1500→2500 yards progression</em></label>
+        
+        <div class="phase-info">
+            <h3>Phase 1: Foundation & Half Marathon Prep (July-August)</h3>
+            <p><strong>Focus:</strong> Fat Loss + Swimming Technique + Half Marathon Training</p>
         </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">
-            <input type="checkbox" class="workout-checkbox" id="mon-stretch">
-            <label for="mon-stretch">Easy stretching and rolling</label>
-        </div>
-    </div>
-</div>
-
-<div class="day-card tuesday">
-    <div class="day-header">TUESDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity run">
-            <input type="checkbox" class="workout-checkbox" id="tue-run">
-            <label for="tue-run">Easy run (Recovery)</label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Afternoon</div>
-        <div class="activity strength">
-            <input type="checkbox" class="workout-checkbox" id="tue-strength">
-            <label for="tue-strength">Strength Training (45-60 min)<br><em>Lower body + Core: Squats, lunges, planks</em></label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">
-            <input type="checkbox" class="workout-checkbox" id="tue-stretch">
-            <label for="tue-stretch">Easy stretching and rolling</label>
-        </div>
-    </div>
-</div>
-
-<div class="day-card wednesday">
-    <div class="day-header">WEDNESDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity walk">
-            <input type="checkbox" class="workout-checkbox" id="wed-walk">
-            <label for="wed-walk">Walk (30 minutes)</label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Afternoon</div>
-        <div class="activity run">
-            <input type="checkbox" class="workout-checkbox" id="wed-speed">
-            <label for="wed-speed">Speed Work (Intervals/Tempo)<br><em>Nike Run Club progression</em></label>
-        </div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">
-            <input type="checkbox" class="workout-checkbox" id="wed-stretch">
-            <label for="wed-stretch">Easy stretching and rolling</label>
-        </div>
-    </div>
-</div></div>
-    </div>
-</div>
-
-<div class="day-card thursday">
-    <div class="day-header">THURSDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity run">Recovery Run (30-40 min easy)</div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Noon</div>
-        <div class="activity bike">Bike (60-120 minutes, Zone 2)<br><em>Start 60min, +10min weekly</em></div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">Easy stretching and rolling</div>
-    </div>
-</div>
-
-<div class="day-card friday">
-    <div class="day-header">FRIDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity walk">Walk (30 minutes)</div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">12-1 PM</div>
-        <div class="activity swim">Swim Masters Class<br><em>Focus: Technique drills</em></div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Afternoon</div>
-        <div class="activity strength">Strength Training (45-60 min)<br><em>Posterior chain + Upper: Deadlifts, rows</em></div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">Easy stretching and rolling</div>
-    </div>
-</div>
-
-<div class="day-card saturday">
-    <div class="day-header">SATURDAY</div>
-    <div class="morning">
-        <div class="time-label">Morning</div>
-        <div class="activity run">Long Run (3.1→13 miles progression)<br><em>Week 13-14: Taper (40% volume reduction)</em></div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Afternoon</div>
-        <div class="activity rest">Recovery & meal prep</div>
-    </div>
-    <div class="afternoon">
-        <div class="time-label">Evening</div>
-        <div class="activity rest">Easy stretching and rolling</div>
-    </div>
-</div>
-</div>
-
-<div class="legend">
-<div class="legend-item">
-    <div class="legend-color walk" style="background-color: #95E1D3;"></div>
-    <span>Walk/Zone 2</span>
-</div>
-<div class="legend-item">
-    <div class="legend-color swim" style="background-color: #3498db;"></div>
-    <span>Swimming</span>
-</div>
-<div class="legend-item">
-    <div class="legend-color bike" style="background-color: #f39c12;"></div>
-    <span>Cycling</span>
-</div>
-<div class="legend-item">
-    <div class="legend-color run" style="background-color: #e74c3c;"></div>
-    <span>Running</span>
-</div>
-<div class="legend-item">
-    <div class="legend-color strength" style="background-color: #9b59b6;"></div>
-    <span>Strength</span>
-</div>
-<div class="legend-item">
-    <div class="legend-color rest" style="background-color: #2ecc71;"></div>
-    <span>Recovery/Rest</span>
-</div>
-</div>
-
-<div class="nutrition-section">
-<div class="section-header" onclick="toggleSection('nutrition-guidelines')">
-    <h3>Nutrition Guidelines - Cutting Phase</h3>
-    <span class="toggle-icon">▼</span>
-</div>
-<div class="nutrition-box collapsible-content" id="nutrition-guidelines">
-    <div class="nutrition-grid">
-        <div>
-            <h4>Regular Days (Mon/Tue/Thu/Fri)</h4>
-            <p><strong>1800 calories:</strong></p>
-            <p>• Protein: 30-35% (135-160g)</p>
-            <p>• Carbs: 35-40% (160-180g)</p>
-            <p>• Fat: 25-30% (50-60g)</p>
-        </div>
-        <div>
-            <h4>Speed Days (Wed/Sat)</h4>
-            <p><strong>1800 calories:</strong></p>
-            <p>• Protein: 30% (135g)</p>
-            <p>• Carbs: 45% (200g)</p>
-            <p>• Fat: 25% (50g)</p>
-            <p><em>Pre/Post workout carbs!</em></p>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="nutrition-section">
-<div class="section-header" onclick="toggleSection('food-recommendations')">
-    <h3>Phase 1 Food Recommendations</h3>
-    <span class="toggle-icon">▼</span>
-</div>
-<div class="nutrition-box food-recs collapsible-content" id="food-recommendations">
-    <div class="food-grid">
-        <div>
-            <h4>🌾 Carb Sources</h4>
-            <div class="food-category">
-                <p><strong>• Quinoa</strong> - Complete protein + carbs</p>
-                <p><strong>• Brown Rice</strong> - Steady energy</p>
-                <p><strong>• Sweet Potato</strong> - Pre/post workout</p>
+        
+        <div class="calendar-grid">
+            <div class="day-card monday">
+                <div class="day-header">MONDAY</div>
+                <div class="morning">
+                    <div class="time-label">Morning</div>
+                    <div class="activity walk">
+                        <input type="checkbox" class="workout-checkbox" id="mon-walk">
+                        <label for="mon-walk">Walk or Bike (45 mins to 1 hour)</label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">12-1 PM</div>
+                    <div class="activity swim">
+                        <input type="checkbox" class="workout-checkbox" id="mon-swim">
+                        <label for="mon-swim">Swim Masters Class<br><em>Target: 1500→2500 yards progression</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Evening</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="mon-stretch">
+                        <label for="mon-stretch">Easy stretching and rolling</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card tuesday">
+                <div class="day-header">TUESDAY</div>
+                <div class="morning">
+                    <div class="time-label">Morning</div>
+                    <div class="activity run">
+                        <input type="checkbox" class="workout-checkbox" id="tue-run">
+                        <label for="tue-run">Easy run (Recovery)</label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Afternoon</div>
+                    <div class="activity strength">
+                        <input type="checkbox" class="workout-checkbox" id="tue-strength">
+                        <label for="tue-strength">Strength Training (45-60 min)<br><em>Lower body + Core: Squats, lunges, planks</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Evening</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="tue-stretch">
+                        <label for="tue-stretch">Easy stretching and rolling</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card wednesday">
+                <div class="day-header">WEDNESDAY</div>
+                <div class="morning">
+                    <div class="time-label">Morning</div>
+                    <div class="activity walk">
+                        <input type="checkbox" class="workout-checkbox" id="wed-walk">
+                        <label for="wed-walk">Walk (30 minutes)</label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Afternoon</div>
+                    <div class="activity run">
+                        <input type="checkbox" class="workout-checkbox" id="wed-speed">
+                        <label for="wed-speed">Speed Work (Intervals/Tempo)<br><em>Nike Run Club progression</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Evening</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="wed-stretch">
+                        <label for="wed-stretch">Easy stretching and rolling</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card thursday">
+                <div class="day-header">THURSDAY</div>
+                <div class="morning">
+                    <div class="time-label">Morning</div>
+                    <div class="activity run">
+                        <input type="checkbox" class="workout-checkbox" id="thu-run">
+                        <label for="thu-run">Recovery Run (30-40 min easy)</label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Noon</div>
+                    <div class="activity bike">
+                        <input type="checkbox" class="workout-checkbox" id="thu-bike">
+                        <label for="thu-bike">Bike (60-120 minutes, Zone 2)<br><em>Start 60min, +10min weekly</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Evening</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="thu-stretch">
+                        <label for="thu-stretch">Easy stretching and rolling</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card friday">
+                <div class="day-header">FRIDAY</div>
+                <div class="morning">
+                    <div class="time-label">Morning</div>
+                    <div class="activity walk">
+                        <input type="checkbox" class="workout-checkbox" id="fri-walk">
+                        <label for="fri-walk">Walk (30 minutes)</label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">12-1 PM</div>
+                    <div class="activity swim">
+                        <input type="checkbox" class="workout-checkbox" id="fri-swim">
+                        <label for="fri-swim">Swim Masters Class<br><em>Focus: Technique drills</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Afternoon</div>
+                    <div class="activity strength">
+                        <input type="checkbox" class="workout-checkbox" id="fri-strength">
+                        <label for="fri-strength">Strength Training (45-60 min)<br><em>Posterior chain + Upper: Deadlifts, rows</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Evening</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="fri-stretch">
+                        <label for="fri-stretch">Easy stretching and rolling</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-card saturday">
+                <div class="day-header">SATURDAY</div>
+                <div class="morning">
+                    <div class="time-label">Morning</div>
+                    <div class="activity run">
+                        <input type="checkbox" class="workout-checkbox" id="sat-run">
+                        <label for="sat-run">Long Run (3.1→13 miles progression)<br><em>Week 13-14: Taper (40% volume reduction)</em></label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Afternoon</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="sat-meal">
+                        <label for="sat-meal">Recovery & meal prep</label>
+                    </div>
+                </div>
+                <div class="afternoon">
+                    <div class="time-label">Evening</div>
+                    <div class="activity rest">
+                        <input type="checkbox" class="workout-checkbox" id="sat-stretch">
+                        <label for="sat-stretch">Easy stretching and rolling</label>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h4>🥩 Protein Sources</h4>
-            <div class="food-category">
-                <p><strong>• Chicken</strong> - Lean, versatile</p>
-                <p><strong>• Steak</strong> - Iron + B-vitamins</p>
-                <p><strong>• Salmon</strong> - Omega-3s</p>
-                <p><strong>• White Fish</strong> - Ultra lean</p>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color walk" style="background-color: #95E1D3;"></div>
+                <span>Walk/Zone 2</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color swim" style="background-color: #3498db;"></div>
+                <span>Swimming</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color bike" style="background-color: #f39c12;"></div>
+                <span>Cycling</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color run" style="background-color: #e74c3c;"></div>
+                <span>Running</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color strength" style="background-color: #9b59b6;"></div>
+                <span>Strength</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color rest" style="background-color: #2ecc71;"></div>
+                <span>Recovery/Rest</span>
             </div>
         </div>
-        <div>
-            <h4>🫘 Legumes (Carbs + Protein)</h4>
-            <div class="food-category">
-                <p><strong>• Black Beans</strong> - Fiber + folate</p>
-                <p><strong>• Red Beans</strong> - Potassium</p>
-                <p><strong>• Green Beans</strong> - Low cal volume</p>
-                <p><strong>• Lentils</strong> - Quick cooking</p>
-                <p><strong>• Chickpeas</strong> - Snack/salads</p>
+        
+        <div class="nutrition-section">
+            <div class="section-header" onclick="toggleSection('nutrition-guidelines')">
+                <h3>Nutrition Guidelines - Cutting Phase</h3>
+                <span class="toggle-icon">▼</span>
             </div>
+            <div class="nutrition-box collapsible-content" id="nutrition-guidelines">
+                <div class="nutrition-grid">
+                    <div>
+                        <h4>Regular Days (Mon/Tue/Thu/Fri)</h4>
+                        <p><strong>1800 calories:</strong></p>
+                        <p>• Protein: 30-35% (135-160g)</p>
+                        <p>• Carbs: 35-40% (160-180g)</p>
+                        <p>• Fat: 25-30% (50-60g)</p>
+                    </div>
+                    <div>
+                        <h4>Speed Days (Wed/Sat)</h4>
+                        <p><strong>1800 calories:</strong></p>
+                        <p>• Protein: 30% (135g)</p>
+                        <p>• Carbs: 45% (200g)</p>
+                        <p>• Fat: 25% (50g)</p>
+                        <p><em>Pre/Post workout carbs!</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nutrition-section">
+            <div class="section-header" onclick="toggleSection('food-recommendations')">
+                <h3>Phase 1 Food Recommendations</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="nutrition-box food-recs collapsible-content" id="food-recommendations">
+                <div class="food-grid">
+                    <div>
+                        <h4>🌾 Carb Sources</h4>
+                        <div class="food-category">
+                            <p><strong>• Quinoa</strong> - Complete protein + carbs</p>
+                            <p><strong>• Brown Rice</strong> - Steady energy</p>
+                            <p><strong>• Sweet Potato</strong> - Pre/post workout</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>🥩 Protein Sources</h4>
+                        <div class="food-category">
+                            <p><strong>• Chicken</strong> - Lean, versatile</p>
+                            <p><strong>• Steak</strong> - Iron + B-vitamins</p>
+                            <p><strong>• Salmon</strong> - Omega-3s</p>
+                            <p><strong>• White Fish</strong> - Ultra lean</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>🫘 Legumes (Carbs + Protein)</h4>
+                        <div class="food-category">
+                            <p><strong>• Black Beans</strong> - Fiber + folate</p>
+                            <p><strong>• Red Beans</strong> - Potassium</p>
+                            <p><strong>• Green Beans</strong> - Low cal volume</p>
+                            <p><strong>• Lentils</strong> - Quick cooking</p>
+                            <p><strong>• Chickpeas</strong> - Snack/salads</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nutrition-section">
+            <div class="section-header" onclick="toggleSection('meal-plans')">
+                <h3>Sample Daily Meal Plans</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="nutrition-box meal-plans collapsible-content" id="meal-plans">
+                <div class="meal-grid">
+                    <div>
+                        <h4>🏃 Speed Work Day (1800 cal)</h4>
+                        <div class="meal-plan">
+                            <p><strong>Breakfast:</strong> Quinoa bowl + berries<br><em>45g carbs, 20g protein</em></p>
+                            <p><strong>Pre-Workout:</strong> Sweet potato + banana<br><em>40g carbs</em></p>
+                            <p><strong>Post-Workout:</strong> Salmon + brown rice<br><em>30g carbs, 35g protein</em></p>
+                            <p><strong>Lunch:</strong> Chicken + lentils + veggies<br><em>35g carbs, 40g protein</em></p>
+                            <p><strong>Dinner:</strong> White fish + chickpeas<br><em>25g carbs, 30g protein</em></p>
+                            <p><strong>Snacks:</strong> Greek yogurt, nuts<br><em>25g carbs, 10g protein</em></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>🚶 Regular Day (1800 cal)</h4>
+                        <div class="meal-plan">
+                            <p><strong>Breakfast:</strong> Eggs + sweet potato hash<br><em>25g carbs, 25g protein</em></p>
+                            <p><strong>Lunch:</strong> Steak + quinoa + green beans<br><em>40g carbs, 35g protein</em></p>
+                            <p><strong>Snack:</strong> Black bean hummus + veggies<br><em>20g carbs, 8g protein</em></p>
+                            <p><strong>Dinner:</strong> Salmon + brown rice + lentils<br><em>45g carbs, 40g protein</em></p>
+                            <p><strong>Snacks:</strong> Almonds, string cheese<br><em>15g carbs, 15g protein</em></p>
+                            <p><em>Higher fat/protein ratio for satiety</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notes">
+            <h3>Important Notes & Progressions</h3>
+            <p><strong>• Sunday:</strong> Complete rest day</p>
+            <p><strong>• Swimming:</strong> Build from 1500→2500 yards over 8 weeks</p>
+            <p><strong>• Cycling:</strong> Start 60min, increase 10min weekly to 120min</p>
+            <p><strong>• Half Marathon Taper:</strong> Weeks 13-14 reduce volume 40%</p>
+            <p><strong>• Calorie Reassessment:</strong> Every 4 weeks based on energy/progress</p>
+            <p><strong>• Heart Rate Monitor:</strong> Use Polar H10 for accurate zones</p>
+            <p><strong>• Hydration:</strong> Half body weight in ounces + 16-24oz per training hour</p>
+            <p><strong>• Sleep:</strong> 7-9 hours nightly (more during cutting phase)</p>
+            <p><strong>• Recovery:</strong> Listen to your body - scale back if needed</p>
         </div>
     </div>
-</div>
-</div>
 
-<div class="nutrition-section">
-<div class="section-header" onclick="toggleSection('meal-plans')">
-    <h3>Sample Daily Meal Plans</h3>
-    <span class="toggle-icon">▼</span>
-</div>
-<div class="nutrition-box meal-plans collapsible-content" id="meal-plans">
-    <div class="meal-grid">
-        <div>
-            <h4>🏃 Speed Work Day (1800 cal)</h4>
-            <div class="meal-plan">
-                <p><strong>Breakfast:</strong> Quinoa bowl + berries<br><em>45g carbs, 20g protein</em></p>
-                <p><strong>Pre-Workout:</strong> Sweet potato + banana<br><em>40g carbs</em></p>
-                <p><strong>Post-Workout:</strong> Salmon + brown rice<br><em>30g carbs, 35g protein</em></p>
-                <p><strong>Lunch:</strong> Chicken + lentils + veggies<br><em>35g carbs, 40g protein</em></p>
-                <p><strong>Dinner:</strong> White fish + chickpeas<br><em>25g carbs, 30g protein</em></p>
-                <p><strong>Snacks:</strong> Greek yogurt, nuts<br><em>25g carbs, 10g protein</em></p>
-            </div>
-        </div>
-        <div>
-            <h4>🚶 Regular Day (1800 cal)</h4>
-            <div class="meal-plan">
-                <p><strong>Breakfast:</strong> Eggs + sweet potato hash<br><em>25g carbs, 25g protein</em></p>
-                <p><strong>Lunch:</strong> Steak + quinoa + green beans<br><em>40g carbs, 35g protein</em></p>
-                <p><strong>Snack:</strong> Black bean hummus + veggies<br><em>20g carbs, 8g protein</em></p>
-                <p><strong>Dinner:</strong> Salmon + brown rice + lentils<br><em>45g carbs, 40g protein</em></p>
-                <p><strong>Snacks:</strong> Almonds, string cheese<br><em>15g carbs, 15g protein</em></p>
-                <p><em>Higher fat/protein ratio for satiety</em></p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+    <script>
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const button = document.getElementById('darkModeToggle');
+            if (document.body.classList.contains('dark-mode')) {
+                button.textContent = '☀️ Light Mode';
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                button.textContent = '🌙 Dark Mode';
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
 
-<div class="notes">
-<h3>Important Notes & Progressions</h3>
-<p><strong>• Sunday:</strong> Complete rest day</p>
-<p><strong>• Swimming:</strong> Build from 1500→2500 yards over 8 weeks</p>
-<p><strong>• Cycling:</strong> Start 60min, increase 10min weekly to 120min</p>
-<p><strong>• Half Marathon Taper:</strong> Weeks 13-14 reduce volume 40%</p>
-<p><strong>• Calorie Reassessment:</strong> Every 4 weeks based on energy/progress</p>
-<p><strong>• Heart Rate Monitor:</strong> Use Polar H10 for accurate zones</p>
-<p><strong>• Hydration:</strong> Half body weight in ounces + 16-24oz per training hour</p>
-<p><strong>• Sleep:</strong> 7-9 hours nightly (more during cutting phase)</p>
-<p><strong>• Recovery:</strong> Listen to your body - scale back if needed</p>
-</div>
-</div>
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
+        }
 
-<script>
-// Dark Mode Toggle
-function toggleDarkMode() {
-document.body.classList.toggle('dark-mode');
-const button = document.getElementById('darkModeToggle');
-if (document.body.classList.contains('dark-mode')) {
-    button.textContent = '☀️ Light Mode';
-    localStorage.setItem('darkMode', 'enabled');
-} else {
-    button.textContent = '🌙 Dark Mode';
-    localStorage.setItem('darkMode', 'disabled');
-}
-}
+        // Collapsible sections
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                content.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
 
-// Load dark mode preference
-if (localStorage.getItem('darkMode') === 'enabled') {
-document.body.classList.add('dark-mode');
-document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
-}
+        // Initialize collapsible sections as collapsed
+        document.addEventListener('DOMContentLoaded', function() {
+            const collapsibleSections = ['nutrition-guidelines', 'food-recommendations', 'meal-plans'];
+            collapsibleSections.forEach(sectionId => {
+                const content = document.getElementById(sectionId);
+                const header = content.previousElementSibling;
+                const icon = header.querySelector('.toggle-icon');
+                content.style.display = 'none';
+                icon.textContent = '▶';
+            });
+        });
 
-// Collapsible sections
-function toggleSection(sectionId) {
-const content = document.getElementById(sectionId);
-const header = content.previousElementSibling;
-const icon = header.querySelector('.toggle-icon');
-
-if (content.style.display === 'none') {
-    content.style.display = 'block';
-    icon.textContent = '▼';
-} else {
-    content.style.display = 'none';
-    icon.textContent = '▶';
-}
-}
-
-// Initialize collapsible sections as collapsed
-document.addEventListener('DOMContentLoaded', function() {
-const collapsibleSections = ['nutrition-guidelines', 'food-recommendations', 'meal-plans'];
-collapsibleSections.forEach(sectionId => {
-    const content = document.getElementById(sectionId);
-    const header = content.previousElementSibling;
-    const icon = header.querySelector('.toggle-icon');
-    content.style.display = 'none';
-    icon.textContent = '▶';
-});
-});
-
-// Add event listener for dark mode toggle
-document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
-</script>
+        // Add event listener for dark mode toggle
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    </script>
 </body>
 </html>
